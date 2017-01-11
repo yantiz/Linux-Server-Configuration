@@ -1,12 +1,12 @@
 # Linux Server Configuration 
 This project is to configure an Apache HTTP Server to host my previous Flask application named [Item Catalog](https://github.com/yantiz/Item-Catalog).
 
-- Instruction on how to remotely access my web server via SSH
+### Instruction on how to remotely access my web server via SSH
 
 Download the private key `grader_rsa` from the repository and move it into `~/.ssh` of your local machine.
 Then type `ssh -i ~/.ssh/grader_rsa grader@35.167.117.224 -p 220` to ssh into the server as the user of 'grader'.
 
-- Instruction on how to connect to my app's webpage through browsers 
+### Instruction on how to connect to my app's webpage through browsers 
 
 [Click me](http://ec2-35-167-117-224.us-west-2.compute.amazonaws.com) to see my app currently being hosted on my web server.
 
