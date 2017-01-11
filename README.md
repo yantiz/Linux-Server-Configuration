@@ -4,7 +4,7 @@ This project is to configure an Apache HTTP Server to host my previous Flask app
 ### Instruction on how to remotely access my web server via SSH
 
 Download the private key `grader_rsa` from the repository and move it into `~/.ssh` of your local machine.
-Then type `ssh -i ~/.ssh/grader_rsa grader@35.167.117.224 -p 220` to ssh into the server as the user of 'grader'.
+Then type `ssh -i ~/.ssh/grader_rsa grader@35.167.117.224 -p 2200 to ssh into the server as the user of 'grader'.
 
 ### Instruction on how to connect to my app's webpage through browsers 
 
@@ -180,6 +180,7 @@ sudo vim /var/www/catalog/catalog/.git/.htaccess
 ```
 
 - Restart Apache server to apply changes made
+
 `sudo service apache2 restart`
 
 # References
