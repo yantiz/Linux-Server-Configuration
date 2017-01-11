@@ -1,11 +1,11 @@
 # Linux Server Configuration 
 This project is to configure an Apache HTTP Server to host my previous Flask application named [Item Catalog](https://github.com/yantiz/Item-Catalog).
 
-# Instruction on how to remotely access my web server via SSH
+- Instruction on how to remotely access my web server via SSH
 Download the private key `grader_rsa` from the repository and move it into `~/.ssh` of your local machine.
 Then type `ssh -i ~/.ssh/grader_rsa grader@35.167.117.224 -p 220` to ssh into the server as the user of 'grader'.
 
-# Instruction on how to connect to my app's webpage through browsers 
+- Instruction on how to connect to my app's webpage through browsers 
 [Click me](http://ec2-35-167-117-224.us-west-2.compute.amazonaws.com) to see my app currently being hosted on my web server.
 
 # The setup procedure I followed: 
@@ -56,7 +56,7 @@ AllowUsers grader
 PermitRootLogin no
 ```
 
-## Step 7: Configure the ufw to allow incoming requests for SSH(port 2200), HTTP and NTP only.
+## Step 7: Configure the ufw to only allow incoming requests for SSH(port 2200), HTTP and NTP.
 ```
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -77,8 +77,8 @@ sudo a2enmod wsgi
 ```
 
 ## Step 10: Install and configure PostgreSQL
-- Goal 1: Create a new user named catalog that has limited permissions to your catalog application database
-- Goal 2: Do not allow remote connections
+- Goal 1: Create a new user named catalog that has limited permissions to your catalog application database.
+- Goal 2: Do not allow remote connections.
 
 ```
 sudo apt-get install postgresql
