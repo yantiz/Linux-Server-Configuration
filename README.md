@@ -113,7 +113,7 @@ The second two declarations are remote, but if we look at the hosts that they ap
 
 Therefore, the default settings have already prevented remote connections.
 
-# Step 11: Set up my Item Catalog app to make it functional within my Apache web server
+## Step 11: Set up my Item Catalog app to make it functional within my Apache web server
 
 - Clone my Flask app from github to my Apache web server
 ```
@@ -167,6 +167,7 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0, '/var/www/catalog/catalog')
 
 from catalog import app as application
+application.config['SECRET_KEY'] = 'not_secret_at_all'
 ```
 
 - Prevent .git directory from being publicly accessed via browsers
