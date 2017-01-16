@@ -12,17 +12,17 @@ Then type `ssh -i ~/.ssh/grader_rsa grader@35.167.117.224 -p 2200` to ssh into t
 
 # The setup procedure I followed: 
 
-## Step 1: Launch your Virtual Machine with my Udacity account
-`https://www.udacity.com/account#!/development_environment`
+## Step 1: Set up my Virtual Machine with Amazon Web Server (AWS)
+Plase refer to [AWS](https://aws.amazon.com/) to see the details.
 
 ## Step 2: SSH into my server
 ```
-mv ~/Downloads/udacity_key.rsa ~/.ssh/
-chmod 600 ~/.ssh/udacity_key.rsa
-ssh -i ~/.ssh/udacity_key.rsa root@35.167.117.224
+mv ~/Downloads/secret.rsa ~/.ssh/
+chmod 600 ~/.ssh/secret.rsa
+ssh -i ~/.ssh/secret.rsa root@35.167.117.224
 ```
 
-## Step 3: Create a new user named grader and its password is set to 'udacity'
+## Step 3: Create a new user named grader and its password is set to 'mygrader'
 `sudo adduser grader`
 
 ## Step 4: Give the grader the permission to sudo and set up its SSH keys
