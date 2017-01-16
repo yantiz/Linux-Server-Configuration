@@ -1,5 +1,5 @@
 # Linux Server Configuration 
-This project is to configure an Apache HTTP Server to host my previous Flask application named [Item Catalog](https://github.com/yantiz/Item-Catalog).
+This project is to configure an Apache HTTP Server supported by Amazon Web Service to host my previous Flask application named [Item Catalog](https://github.com/yantiz/Item-Catalog).
 
 ### Instruction on how to remotely access my web server via SSH
 
@@ -12,7 +12,7 @@ Then type `ssh -i ~/.ssh/grader_rsa grader@35.167.117.224 -p 2200` to ssh into t
 
 # The setup procedure I followed: 
 
-## Step 1: Set up my Virtual Machine with Amazon Web Server (AWS)
+## Step 1: Set up my Virtual Machine with Amazon Web Service (AWS)
 Plase refer to [AWS](https://aws.amazon.com/) to see the details.
 
 ## Step 2: SSH into my server
