@@ -1,5 +1,5 @@
 # Linux Server Configuration 
-This project is to configure an Apache HTTP Server supported by Amazon Web Service to host my previous Flask application named [Item Catalog](https://github.com/yantiz/Item-Catalog).
+This project's purpose is to configure an Apache HTTP Server supported by Amazon Web Service to host my previous Flask application named [Item Catalog](https://github.com/yantiz/Item-Catalog).
 
 ### Instruction on how to remotely access my web server via SSH
 
